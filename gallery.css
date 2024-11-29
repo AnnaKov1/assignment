@@ -1,0 +1,42 @@
+/* Style for the card images */
+.card-img-top {
+    width: 100%;  /* Ensure images take full width of the card */
+    height: 300px; /* Fixed height */
+    object-fit: cover; /* Make sure images cover the container area without distortion */
+    border-radius: 8px 8px 0 0; /* Rounded top corners */
+}
+
+/* Style for the card */
+.card {
+    border: 1px solid #ddd;  /* Light border around the card */
+    border-radius: 8px; /* Rounded corners for the card */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow around the card */
+    margin: 10px; /* Spacing between cards */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for the cards */
+.card:hover {
+    transform: translateY(-5px); /* Slightly raise the card when hovered */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
+}
+
+/* Card body styling */
+.card-body {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Card title styling */
+.card-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Ensure cards are responsive (i.e., will adjust for smaller screens) */
+@media (max-width: 768px) {
+    .card-img-top {
+        height: 250px; /* Reduce the height of images on smaller screens */
+    }
+}
